@@ -203,7 +203,7 @@ class SelectProviderTypeWidget extends HookConsumerWidget {
                             ),
                           );
                     },
-                    separatorBuilder: (_, _) => const SizedBox(height: 12),
+                    separatorBuilder: (_, _1) => const SizedBox(height: 12),
                     itemCount: filtered.length,
                   ),
                   if (defaultProvider != null &&
