@@ -56,7 +56,7 @@ class _VersionSingleState extends State<VersionSingleWidget>
                 child: SingleChildScrollView(
                   child: Html(
                     data: widget.notes,
-                    onLinkTap: (link, _, _) {
+                    onLinkTap: (link, _, _1) {
                       if (link != null) {
                         launchUrlString(
                           link,
