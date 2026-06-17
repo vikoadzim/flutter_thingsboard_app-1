@@ -46,7 +46,7 @@ class EntityGridCard<T> extends StatelessWidget {
       ),
       onTap: () {
         if (_onEntityTap != null) {
-          _onEntityTap(_entity);
+          _onEntityTap?.call(_entity);
         }
       },
     );
