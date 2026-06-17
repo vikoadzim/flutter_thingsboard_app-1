@@ -35,7 +35,7 @@ class ScanListWidget extends StatelessWidget {
       },
       itemCount: items.length,
       separatorBuilder:
-          (_, _) =>
+          (_, _1) =>
               const Divider(height: 1, thickness: .05, color: Colors.black),
     );
   }
