@@ -67,9 +67,7 @@ dependencies:
   permission_handler: ^11.3.1
   wifi_scan: ^0.4.1+1
   open_settings_plus: ^0.4.0
-  plugin_wifi_connect:
-    git:
-      url: https://github.com/thingsboard/flutter_wifi_connect
+  plugin_wifi_connect: ^1.2.0
   toastification: ^2.3.0
   flutter_widget_from_html: ^0.16.0
   file_picker: ^9.0.0
@@ -77,9 +75,7 @@ dependencies:
   json_annotation: ^4.9.0
   mobile_scanner: ^7.0.1
   flutter_hooks: ^0.21.2
-  esp_provisioning_softap:
-    git:
-      url: https://github.com/thingsboard/esp_provisioning_softap
+  esp_provisioning_softap: ^1.0.1
   flutter_slidable: ^4.0.0
   flutter_native_splash: ^2.4.4
   super_tooltip: ^2.1.0
@@ -93,14 +89,9 @@ dependencies:
   barcode: ^2.2.9
   riverpod_annotation: ^2.6.1
   path_provider: ^2.1.5
+
 dev_dependencies:
-  integration_test:
-    sdk: flutter
-  flutter_test:
-    sdk: flutter
   flutter_launcher_icons: ^0.14.4
-  mocktail: ^1.0.3
-  bloc_test: ^9.1.7
   flutter_lints: ^2.0.3
   build_runner: ^2.4.9
   custom_lint: ^0.7.0
@@ -110,6 +101,7 @@ dev_dependencies:
   json_serializable: ^6.9.5
   freezed: ^3.1.0
   intl_utils: ^2.8.11
+
 dependency_overrides:
   logger: ^2.5.0
   http: ^1.3.0
@@ -120,36 +112,21 @@ dependency_overrides:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
+    - assets/tb-mobile-app-config.json
 
 flutter_launcher_icons:
-  ### android config
   android: "launcher_icon"
-  #fallback android icon
   image_path_android: "assets/branding/icon_filled.png"
-  # icon config for android 13+
   adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/branding/icon_foreground.png"
   adaptive_icon_foreground_inset: 16
   adaptive_icon_monochrome: "assets/branding/icon_monochrome.png"
-  ###
-  ### ios config
   ios: true
-  #fallback ios icon
   image_path_ios: "assets/branding/icon_foreground.png"
   background_color_ios: "#ffffff"
   desaturate_tinted_to_grayscale_ios: true
   remove_alpha_ios: true
-  # ios 18+ icon 
   image_path_ios_dark_transparent: "assets/branding/icon_foreground.png"
-  # ios 26 liquid glass icon currently this config is not implemented
-  # image_path_ios_liquid_glass_icon: "assets/branding/icon_liquid_glass_ios.png"
-  # liquid_glass_specular_ios: true
-  # liquid_glass_blur_ios: 0.2
-  # liquid_glass_icon_scale: 0.73
-  # liquid_glass_translucency_ios: 0.3
-  # liquid_glass_shadow_opacity_ios: 0.3
-  ###
 
 flutter_intl:
   enabled: true
