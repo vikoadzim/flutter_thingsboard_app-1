@@ -80,7 +80,7 @@ class _FullscreenDashboardPageState extends State<FullscreenDashboardPage> {
       body: ValueListenableBuilder<String?>(
         valueListenable: getIt<IEndpointService>().listenEndpointChanges,
         builder:
-            (context, _, _) => DashboardWidget(
+            (context, _, _1) => DashboardWidget(
               titleCallback: (title) {
                 dashboardTitleValue.value = title;
               },
