@@ -92,10 +92,9 @@ dependencies:
 
 dev_dependencies:
   flutter_launcher_icons: ^0.14.4
-  flutter_lints: ^2.0.3
+  flutter_lints: any
   build_runner: ^2.4.9
   custom_lint: ^0.7.0
-  lint: 2.8.0
   flutter_gen: ^5.11.0
   riverpod_generator: ^2.6.5
   json_serializable: ^6.9.5
