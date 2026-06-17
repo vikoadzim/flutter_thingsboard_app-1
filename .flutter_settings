@@ -1,1 +1,3 @@
-
+{
+  "enabled-swift-package-manager": false
+}
