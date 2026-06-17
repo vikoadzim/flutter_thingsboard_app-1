@@ -74,7 +74,7 @@ class AlarmActivityWidget extends HookConsumerWidget {
                           getIt<AlarmActivityPaginationRepository>()
                               .pagingController,
                       builderDelegate: PagedChildBuilderDelegate(
-                        itemBuilder: (_, activity, _) {
+                        itemBuilder: (_, activity, _1) {
                           return ActivityBuilderWidget(
                             activity,
                             userId:
