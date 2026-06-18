@@ -131,7 +131,7 @@ class TbAppBar extends HookConsumerWidget implements PreferredSizeWidget {
         children: [
           Flexible(child: text),
           SuperTooltip(
-            borderRadius: 4,
+            contentAreaCornerRadius: 4,
             arrowLength: 8,
             arrowBaseWidth: 16,
             top: padding,
